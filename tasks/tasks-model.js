@@ -7,13 +7,13 @@ function add(task) {
 }
 
 function find() {
-  return db('task as t')
-    .join('projects as p', 't.project_id', '=', 'p.id')
+  return db('tasks as t')
+    .join('projects as p', 'p.id', 't.project_id')
     .select(
       't.id',
       't.task_description',
       't.task_notes',
       'p.project_name',
-      'p.p_description'
+      'p.project_description'
     );
 }
