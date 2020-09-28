@@ -1,6 +1,6 @@
 const db = require('../data/db-config');
 
-module.exports = [add, find];
+module.exports = { add, find };
 
 function add(task) {
   return db('tasks').insert(task);
