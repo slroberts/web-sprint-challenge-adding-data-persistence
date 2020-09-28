@@ -48,11 +48,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain the difference between `Relational Databases` and `SQL`.
 
+In relational databases, the data is stored in tabular format grouped into rows and columns (similar to spreadsheets). A collection of rows is called a table. Each row represents a single record in the table and is made up of one or more columns.
+
+These kinds of databases are called relational because a relation is a mathematical idea that is equivalent to a table. So relational databases are databases that store their data in tables.
+
+SQL is optimized for the sole purpose of querying data. This means not only optimization in writing queries, but optimization in terms of retrieving data, which is critical in the modern world of big data.
+
 2. Why do tables need a `primary key`?
+
+A primary key is a way to identify each entry in the database uniquely.
 
 3. What is the name given to a table column that references the primary key on another table.
 
+A Foreign Key.
+
 4. What do we need in order to have a _many to many_ relationship between two tables.
+
+We need to introduce an intermediary table that holds foreign keys that reference the primary key on the related tables.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -81,13 +93,13 @@ Your finished project must include all of the following requirements:
   - [x] when adding a `task` the client must provide a description, the notes are optional.
   - [x] when adding a `task` the client must provide the `id` of an existing project.
   - [x] for `projects` and `tasks` if no value is provided for the `completed` property, the API should provide a default value of `false`.
-- [ ] Build an API with endpoints for:
-  - [ ] adding resources.
-  - [ ] retrieving a list of resources.
-  - [ ] adding projects.
-  - [ ] retrieving a list of projects.
-  - [ ] adding tasks.
-  - [ ] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
+- [x] Build an API with endpoints for:
+  - [x] adding resources.
+  - [x] retrieving a list of resources.
+  - [x] adding projects.
+  - [x] retrieving a list of projects.
+  - [x] adding tasks.
+  - [x] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. You will be scored on your adherence to proper code style and good organization. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
